@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gestell-langchain"
+version = "0.1.0"
+description = "Gestell's Langchain Integration"
+readme = "README.md"
+requires-python = ">=3.11"
+keywords = ["gestell", "langchain", "search", "tools"]
+dependencies = [
+    "gestell>=1.3.0",
+    "langchain>=0.3",
+    "langchain-community>=0.3.0",
+]
+
+authors = [{ name = "Chris Cates", email = "hello@chriscates.ca" }]
+license = { text = "MIT" }
+
+
+[project.urls]
+Homepage = "https://github.com/Gestell-AI/langchain"
+Issues = "https://github.com/Gestell-AI/langchain/issues"
+
+[project.optional-dependencies]
+dev = ["ruff", "pytest", "pytest-asyncio"]
+test = ["pytest", "coverage"]
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+py-modules = ["langchain_gestell"]
+
+[dependency-groups]
+dev = ["langchain-openai>=0.3.0", "langgraph>=0.4.3"]
