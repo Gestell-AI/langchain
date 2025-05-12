@@ -33,10 +33,7 @@ def main():
         callbacks=[StreamingStdOutCallbackHandler()],
     )
 
-    agent = create_react_agent(
-        model=llm,
-        tools=build_tools(),
-    )
+    agent = create_react_agent(model=llm, tools=build_tools())
 
     print("Gestell Chat Agent ready. Ctrl-C to exit.")
     try:

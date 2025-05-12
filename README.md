@@ -2,7 +2,9 @@
 
 ![license](https://img.shields.io/badge/license-MIT-blue)
 ![python-version](https://img.shields.io/badge/python-3-blue)
-![version](https://img.shields.io/badge/version-0.1.0-blue)
+![version](https://img.shields.io/badge/version-0.1.1-blue)
+[![Coverage Status](https://coveralls.io/repos/github/Gestell-AI/langchain/badge.svg?branch=master)](https://coveralls.io/github/Gestell-AI/langchain?branch=master)
+[![CircleCI](https://dl.circleci.com/status-badge/img/circleci/7sUmZuDYQ6cd8WbCiCCnfR/EEFWrv1TJyPmvSnGT7iHCV/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/circleci/7sUmZuDYQ6cd8WbCiCCnfR/EEFWrv1TJyPmvSnGT7iHCV/tree/master)
 
 ![Preview](./preview.gif)
 
@@ -40,3 +42,5 @@ agent = create_react_agent(
 You can view a more comprehensive demo [here](./examples/chat.py).
 
 Open an issue if you would like more comprehensive demos or need clarity on how things work.
+
+View the [CHANGELOG](./CHANGELOG.md) to review updates to the library.
